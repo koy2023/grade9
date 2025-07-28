@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Battambang&family=Moul&display=swap" rel="stylesheet">
   <title>ព័ត៌មានសិស្ស</title>
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif, Khmer os;
+      font-family: "Segoe UI", sans-serif,  "Moul";
       padding: 2rem;
        /*background: url('images') no-repeat center center fixed;
         background-size: cover; */
         background-color: #BED0F4;
+       
+  
+  font-weight: 400;
+  font-style: normal;
+
+
      
     }
 
@@ -47,7 +57,7 @@
       font-size: 0.96rem;
       color: #333;
       margin: 0;
-      font-family: Khmer Moul;
+     
     }
 
     .row {
@@ -68,7 +78,10 @@
       border: 1px solid #dee9ee;
       font-size: 1rem;
       text-align: justify;
-      font-family: "Segoe UI", sans-serif, Khmer os;
+      font-family: "Battambang", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
      
     }
 
@@ -199,7 +212,7 @@
   <div class="row">
     <div style="flex:1">
       <label for="dob">ថ្ងៃខែឆ្នាំកំណើត</label>
-      <input type="date" name="dob" id="dob" required />
+      <input type="text" name="dob" id="dob" placeholder="ថ្ងៃ/ខែ/ឆ្នាំ" required />
     </div>
     <div style="flex:1">
       <label for="birthplace">ទីកន្លែងកំណើត</label>
@@ -258,7 +271,7 @@
       <input type="tel" name="phone" id="phone" required />
     </div>
     <div style="flex:1">
-      <label for="image">រូបថតសំបត្រកំណើត</label>
+      <label for="image">រូបថតសំបុត្រកំណើត</label>
       <input type="file" name="image" accept=".png,.jpg" required />
     </div>
   </div>
