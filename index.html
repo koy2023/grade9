@@ -271,7 +271,7 @@
       <input type="tel" name="phone" id="phone" required />
     </div>  --> 
     <div style="flex:1">
-      <label for="image">រូបថតគណនី App</label>
+      <label for="image">រូបថតព័ត៌មានសិស្សក្នុង App</label>
       <input type="file" name="image" accept=".png,.jpg" required />
     </div>
   </div>
@@ -281,7 +281,7 @@
     <button type="submit" class="btn submit">រក្សាទុក</button>
   </div>
 
-  <div id="message"></div>
+  <div id="message" style="font-family: Battambang, system-ui;"></div>
 </form>
 
 <script>
@@ -291,7 +291,7 @@
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    messageBox.textContent = "កំពុងរក្សាទុក...";
+    messageBox.textContent = "សូមរង់ចាំ...ហាមចុចរក្សាទុកច្រើនដង";
     messageBox.className = "";
 
     const formData = new FormData(form);
@@ -344,4 +344,5 @@
 
 </body>
 </html>
+
 
